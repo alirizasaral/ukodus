@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grey">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+	    android:stretchColumns="*" >
+	    <TableRow>
+			<include android:id="@+id/numberBlock1" layout="@layout/number_field" android:layout_margin="5dip"/>
+			<include android:id="@+id/numberBlock2" layout="@layout/number_field" android:layout_margin="5dip"/>
+			<include android:id="@+id/numberBlock3" layout="@layout/number_field" android:layout_margin="5dip"/>
+		</TableRow>
+	    <TableRow>
+			<include android:id="@+id/numberBlock4" layout="@layout/number_field" android:layout_margin="5dip"/>
+			<include android:id="@+id/numberBlock5" layout="@layout/number_field" android:layout_margin="5dip"/>
+			<include android:id="@+id/numberBlock6" layout="@layout/number_field" android:layout_margin="5dip"/>
+		</TableRow>
+	</TableLayout>
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*" >
+	    <TableRow>
+			<include android:id="@+id/numberBase" layout="@layout/number_base" android:layout_margin="5dip"/>
+		</TableRow>
+	</TableLayout>
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dip"
+		android:id="@+id/score" android:gravity="center"  android:background="#eeeeee" android:textColor="#000000" android:text="score"/>
+</LinearLayout>
